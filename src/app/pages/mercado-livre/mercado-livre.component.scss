@@ -1,0 +1,256 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+   background-color: rgb(237, 237, 237);
+
+  .mat-toolbar {
+    background-color: rgb(255, 241, 89);
+    color: #333;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+
+    .linha1 {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: space-evenly;
+
+      .logo {
+        margin-left: 3rem;
+      }
+
+      input {
+        width: 560px;
+        height: 20px;
+        padding: 10px;
+        outline: 0;
+        border: none;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+      }
+
+      .icon-search {
+        width: 1rem;
+        position: absolute;
+        margin-left: 22rem;
+        border-left: 1px solid gray;
+        padding-left: 0.5rem;
+      }
+
+      .disney {
+        width: 20rem;
+        display: flex;
+        align-items: center;
+        margin-right: 3.5rem;
+      }
+    }
+
+    .linha2 {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: space-evenly;
+
+      .box-cep {
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        .icon-localizacao {
+          width: 2.5rem;
+          height: 2.5rem;
+        }
+
+        .infoCep {
+          display: flex;
+          flex-direction: column;
+          padding-bottom: 11px;
+
+          .info {
+            font-size: small;
+            color: rgba(128, 128, 128, 0.788);
+            font-weight: 100;
+          }
+
+          .cep {
+            font-size: small;
+            font-weight: lighter;
+            padding-right: 2.5rem;
+            line-height: 12px;
+          }
+        }
+      }
+
+      .links {
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 1.5rem;
+        padding-right: 5rem;
+        transition: 1s;
+
+        .arrow-nav {
+          width: 1rem;
+          height: 1rem;
+          display: flex;
+          align-items: center;
+          margin-top: 0.5rem;
+          margin-right: 1rem;
+        }
+
+        .link {
+          color: rgba(128, 128, 128, 0.795);
+          text-decoration: none;
+          font-weight: lighter;
+        }
+      }
+
+      .logar {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+        .icon-user {
+          width: 1.8rem;
+          height: 1.8rem;
+          display: flex;
+          align-items: center;
+          margin-top: 0.5rem;
+          padding-left: 6rem;
+        }
+
+        span {
+          font-size: small;
+          font-weight: lighter;
+          padding-top: 1rem;
+          padding-left: 0.8rem;
+        }
+
+        .arrow-user {
+          width: 1rem;
+          height: 1rem;
+          display: flex;
+          align-items: center;
+          padding-top: 1.3rem;
+          padding-left: 0.2rem;
+          padding-right: 0.2rem;
+        }
+
+        .arrow {
+          width: 1rem;
+          height: 1rem;
+          display: flex;
+          align-items: center;
+          padding-top: 1.3rem;
+          padding-left: 0.2rem;
+        }
+
+        .icon-sino {
+          width: 1.2rem;
+          height: 1.2rem;
+          display: flex;
+          align-items: center;
+          margin-top: 0.5rem;
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+
+        .icon-carrinho {
+          width: 1.2rem;
+          height: 1.2rem;
+          display: flex;
+          align-items: center;
+          margin-top: 0.5rem;
+        }
+      }
+    }
+  }
+
+  mat-drawer-container {
+    height: 80.3vh;
+
+     mat-drawer {
+      width: 228px;
+      background-color: rgb(245, 245, 245);
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+      color: rgb(140, 140, 140);
+      display: flex;
+     align-items: center;
+      text-align: start;
+      justify-content: flex-start;
+
+      .minhaConta {
+        margin-right: 5rem;
+        padding: 0.84rem;
+      }
+
+      p {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: rgba(109, 109, 109, 0.815);
+        font-weight: lighter;
+        font-size: smaller;
+      }
+
+      mat-expansion-panel {
+        background-color: #f5f5f5;
+
+        mat-expansion-panel-header {
+          background-color: #f5f5f5;
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    mat-drawer-content {
+      background-color: #eeeeee;
+      display: center;
+      align-items: center;
+      justify-content: center;
+
+      .foto-perfil {
+        width: 40px;
+        height: 45px;
+        border-radius: 50%;
+      }
+
+      .example-card {
+        width: 30vw;
+        height: 20vh;
+        margin-left: 20rem;
+        margin-top: 1.5rem;
+        background-color: rgb(255, 255, 255);
+        color:rgb(140, 140, 140);
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+
+
+        mat-card-content{
+        display: flex;
+        text-align: start;
+        justify-content: flex-start;
+        align-items: start;
+        flex-direction: column;
+
+        .icon{
+          width: 40px;
+        height: 45px;
+
+        p{
+          padding-right: 16rem;
+          font-size: small;
+        }
+      }
+    }
+    }
+    }
+  }
+
+}
